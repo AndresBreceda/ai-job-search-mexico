@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "source": "Mercado Laboral TI y Salarios México 2025/2026 (Software Guru / Hireline / Glassdoor MX)",
+    "currency": "MXN",
+    "index_baseline": 45000,
+    "index_label": "MXN/mes",
+    "baseline_description": "$45,000 MXN = mediana salarial bruta mensual de referencia para perfiles de software y datos en México"
+  },
+  "companies": [
+    {
+      "company": "Mercado Libre México",
+      "city": "Ciudad de México",
+      "categories": {
+        "software_engineer_junior": { "count": 180, "index": 38000 },
+        "software_engineer_mid": { "count": 420, "index": 62000 },
+        "software_engineer_senior": { "count": 310, "index": 98000 },
+        "data_scientist_senior": { "count": 95, "index": 105000 },
+        "engineering_lead": { "count": 60, "index": 145000 }
+      }
+    },
+    {
+      "company": "Nubank México",
+      "city": "Ciudad de México",
+      "categories": {
+        "software_engineer_mid": { "count": 110, "index": 72000 },
+        "software_engineer_senior": { "count": 140, "index": 115000 },
+        "data_ai_engineer_senior": { "count": 65, "index": 125000 },
+        "staff_engineer": { "count": 30, "index": 170000 }
+      }
+    },
+    {
+      "company": "BBVA México",
+      "city": "Ciudad de México",
+      "categories": {
+        "developer_junior": { "count": 320, "index": 28000 },
+        "developer_mid": { "count": 650, "index": 48000 },
+        "developer_senior": { "count": 480, "index": 78000 },
+        "data_scientist": { "count": 160, "index": 82000 },
+        "tech_lead": { "count": 120, "index": 110000 }
+      }
+    },
+    {
+      "company": "Wizeline",
+      "city": "Guadalajara",
+      "categories": {
+        "software_engineer_mid": { "count": 220, "index": 55000 },
+        "software_engineer_senior": { "count": 280, "index": 88000 },
+        "qa_automation_senior": { "count": 90, "index": 70000 },
+        "ai_ml_engineer": { "count": 55, "index": 95000 }
+      }
+    },
+    {
+      "company": "Oracle México",
+      "city": "Guadalajara",
+      "categories": {
+        "software_developer_junior": { "count": 150, "index": 35000 },
+        "software_developer_mid": { "count": 380, "index": 60000 },
+        "software_developer_senior": { "count": 420, "index": 95000 },
+        "principal_engineer": { "count": 110, "index": 140000 }
+      }
+    },
+    {
+      "company": "Intel México",
+      "city": "Guadalajara",
+      "categories": {
+        "software_engineer_mid": { "count": 160, "index": 58000 },
+        "software_engineer_senior": { "count": 210, "index": 92000 },
+        "hardware_systems_engineer": { "count": 130, "index": 85000 }
+      }
+    },
+    {
+      "company": "IBM México",
+      "city": "Guadalajara",
+      "categories": {
+        "developer_mid": { "count": 240, "index": 46000 },
+        "developer_senior": { "count": 310, "index": 75000 },
+        "cloud_architect": { "count": 80, "index": 112000 }
+      }
+    },
+    {
+      "company": "Softtek",
+      "city": "Monterrey",
+      "categories": {
+        "developer_junior": { "count": 450, "index": 22000 },
+        "developer_mid": { "count": 890, "index": 42000 },
+        "developer_senior": { "count": 620, "index": 68000 },
+        "project_manager_lead": { "count": 150, "index": 90000 }
+      }
+    },
+    {
+      "company": "Globant México",
+      "city": "Ciudad de México",
+      "categories": {
+        "developer_mid": { "count": 320, "index": 52000 },
+        "developer_senior": { "count": 410, "index": 85000 },
+        "data_ai_engineer": { "count": 110, "index": 92000 }
+      }
+    },
+    {
+      "company": "Kavak",
+      "city": "Ciudad de México",
+      "categories": {
+        "software_engineer_mid": { "count": 85, "index": 58000 },
+        "software_engineer_senior": { "count": 120, "index": 90000 },
+        "data_engineer_senior": { "count": 45, "index": 95000 }
+      }
+    },
+    {
+      "company": "Clip",
+      "city": "Ciudad de México",
+      "categories": {
+        "software_engineer_mid": { "count": 60, "index": 65000 },
+        "software_engineer_senior": { "count": 95, "index": 105000 },
+        "engineering_manager": { "count": 25, "index": 150000 }
+      }
+    },
+    {
+      "company": "Coppel Tech",
+      "city": "Culiacán",
+      "categories": {
+        "developer_junior": { "count": 210, "index": 24000 },
+        "developer_mid": { "count": 430, "index": 45000 },
+        "developer_senior": { "count": 310, "index": 72000 },
+        "cloud_data_engineer": { "count": 75, "index": 80000 }
+      }
+    },
+    {
+      "company": "Bitso",
+      "city": "Remoto México",
+      "categories": {
+        "software_engineer_mid": { "count": 45, "index": 70000 },
+        "software_engineer_senior": { "count": 70, "index": 110000 },
+        "security_engineer": { "count": 25, "index": 115000 }
+      }
+    },
+    {
+      "company": "Tata Consultancy Services (TCS) México",
+      "city": "Guadalajara",
+      "categories": {
+        "developer_junior": { "count": 520, "index": 20000 },
+        "developer_mid": { "count": 980, "index": 38000 },
+        "developer_senior": { "count": 740, "index": 62000 }
+      }
+    },
+    {
+      "company": "Amazon México",
+      "city": "Ciudad de México",
+      "categories": {
+        "software_development_engineer_1": { "count": 80, "index": 55000 },
+        "software_development_engineer_2": { "count": 130, "index": 95000 },
+        "senior_sde": { "count": 65, "index": 155000 }
+      }
+    },
+    {
+      "company": "Microsoft México",
+      "city": "Ciudad de México",
+      "categories": {
+        "software_engineer_2": { "count": 70, "index": 92000 },
+        "senior_software_engineer": { "count": 85, "index": 150000 },
+        "cloud_solution_architect": { "count": 50, "index": 135000 }
+      }
+    }
+  ]
+}

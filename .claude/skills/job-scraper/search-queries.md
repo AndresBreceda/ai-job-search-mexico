@@ -12,14 +12,17 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary (Mexican and international portals supported by CLI tools & web fallback):
+- **OCCMundial** (`occ.com.mx`) - Bolsa de trabajo líder en México (cubierto por `mexico-portals-search`)
+- **Computrabajo México** (`mx.computrabajo.com`) - Portal general en México (cubierto por `mexico-portals-search`)
+- **Get on Board** (`getonbrd.com`) - Portal líder tech/digital en México y LATAM (cubierto por `getonbrd-search`)
+- **LinkedIn Jobs** (`linkedin.com/jobs`) - Filtro: México / Remoto (cubierto por `linkedin-search`)
+- **Indeed México** (`mx.indeed.com`) - Agregador general en México
+- **Hireline / EmpleosTI** (`hireline.io/mx`) - Especializado en tecnología y software en México
+- **Freehire** (`freehire.me`) - Agregador global de vacantes de ingeniería / tech
 
 Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+- Búsquedas directas en Google con filtros `site:` para empresas objetivo en México y empresas remotas internacionales.
 
 ## Query Categories
 

@@ -1,0 +1,12 @@
+{
+  "name": "mexico-portals-cli",
+  "version": "1.0.0",
+  "description": "CLI for searching Mexican job portals (OCCMundial and Computrabajo México)",
+  "type": "module",
+  "main": "src/cli.py",
+  "scripts": {
+    "start": "python src/cli.py"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

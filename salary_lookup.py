@@ -26,19 +26,31 @@ from pathlib import Path
 
 DATA_FILE = Path(__file__).parent / "salary_data.json"
 
-# Common Danish <-> anglicized spelling variants
+# Common spelling variants (Spanish, Nordic, anglicized)
 SPELLING_VARIANTS = {
     "ø": "o", "æ": "ae", "å": "aa",
     "ö": "o", "ä": "ae", "ü": "u",
+    "á": "a", "é": "e", "í": "i", "ó": "o", "ú": "u",
+    "ñ": "n",
 }
 
 # Legal suffixes and noise to strip when matching company names
 STRIP_PATTERNS = [
+    # Mexican and Latin American corporate types
+    r"\bs\.?a\.?p\.?i\.?\s+de\s+c\.?v\.?\b",
+    r"\bs\.?a\.?\s+de\s+c\.?v\.?\b",
+    r"\bs\.?de\s+r\.?l\.?\s+de\s+c\.?v\.?\b",
+    r"\bs\.?a\.?p\.?i\.?\b",
+    r"\bs\.?de\s+r\.?l\.?\b",
+    r"\bs\.?a\.?s\.?\b",
+    r"\bs\.?c\.?\b",
+    r"\bmexico\b", r"\bméxico\b", r"\bmx\b",
+    # Danish / European types
     r"\ba/s\b", r"\baps\b", r"\bi/s\b", r"\bp/s\b", r"\bk/s\b",
     r"\bivs\b", r"\bamba\b", r"\ba\.m\.b\.a\.?\b",
     r"\(vg\)", r"\(.*?\)",  # (VG) and other parentheticals
     r"\bdanmark\b", r"\bdenmark\b", r"\bscandinavia\b", r"\bnordic\b",
-    r"\bgroup\b", r"\bholding\b",
+    r"\bgroup\b", r"\bholding\b", r"\bcorp\b", r"\binc\b", r"\bllc\b",
     r",\s*.*$",  # everything after comma (sub-entities)
 ]
 
@@ -166,15 +178,17 @@ def normalize(s):
     s = s.lower().strip()
     for pat in STRIP_PATTERNS:
         s = re.sub(pat, "", s)
-    s = re.sub(r"[^a-zæøåöäü0-9]", "", s)
+    for src, dst in SPELLING_VARIANTS.items():
+        s = s.replace(src, dst)
+    s = re.sub(r"[^a-z0-9]", "", s)
     return s.strip()
 
 
 def anglicize(s):
-    """Convert Danish/Nordic characters to anglicized equivalents."""
+    """Convert Spanish/Nordic/regional characters to plain ASCII equivalents."""
     s = s.lower()
-    for danish, english in SPELLING_VARIANTS.items():
-        s = s.replace(danish, english)
+    for src, dst in SPELLING_VARIANTS.items():
+        s = s.replace(src, dst)
     return s
 
 
@@ -183,7 +197,9 @@ def extract_core_words(s):
     s = s.lower()
     for pat in STRIP_PATTERNS:
         s = re.sub(pat, "", s)
-    words = re.findall(r"[a-zæøåöäü0-9]+", s)
+    for src, dst in SPELLING_VARIANTS.items():
+        s = s.replace(src, dst)
+    words = re.findall(r"[a-z0-9]+", s)
     return [w for w in words if len(w) > 1]
 
 

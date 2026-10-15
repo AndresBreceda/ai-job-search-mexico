@@ -1,0 +1,15 @@
+{
+  "name": "getonbrd-cli",
+  "version": "1.0.0",
+  "description": "CLI for searching tech and digital jobs on Get on Board (Mexico, LATAM & Remote)",
+  "type": "module",
+  "main": "src/cli.ts",
+  "bin": {
+    "getonbrd-search": "src/cli.ts"
+  },
+  "scripts": {
+    "start": "node src/cli.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

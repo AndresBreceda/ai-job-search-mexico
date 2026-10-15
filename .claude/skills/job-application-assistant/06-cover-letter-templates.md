@@ -157,8 +157,9 @@ Escape these wherever they appear in body text:
 
 ### Non-English Cover Letters
 - Same template structure, just write content in the posting's language
-- Adjust date format to local convention
-- Adjust closing to local convention (e.g. "Med venlig hilsen," for Danish)
+- Adjust date format to local convention (e.g. "15 de octubre de 2026")
+- Adjust salutation to local convention (e.g. "Estimado/a [Nombre]," o "Estimado Equipo de Selección,")
+- Adjust closing to local convention (e.g. "Atentamente," o "Quedo a su disposición para coordinar una entrevista," para español; "Sincerely," para inglés)
 
 ## Checklist Before Finalizing
 - [ ] No em-dashes (use commas or periods instead)
